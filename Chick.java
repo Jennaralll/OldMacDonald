@@ -1,4 +1,4 @@
-class Chick //implements Animal 
+class Chick implements Animal //implements Animal 
 {     
      private String myType;
      private String mySound;
@@ -7,8 +7,17 @@ class Chick //implements Animal
      	myType = type;
      	mySound = sound;
      }
-     public Chick() 
+     public Chick(String type, String sound1, String sound2) 
      {
+     	myType = type;
+     	if(Math.random() < 0.5){
+     		mySound = sound1;
+     	}
+     	else{
+     		mySound = sound2;
+     	}
+     }
+     public Chick(){
      	myType = "unknown";
      	mySound = "unknown";
      }
