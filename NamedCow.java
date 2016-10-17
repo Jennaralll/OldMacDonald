@@ -1,8 +1,14 @@
+
 class NamedCow extends Cow
 {
-		cow.setName();
-		public NamedCow(){
-			name = "me";
+		private String cowName;
+		public NamedCow(String type, String sound, String newName){
+			myType = type;
+			mySound = sound; 
+			cowName = newName;
 		}
-		void 
+		public String getName(){
+			return cowName;
+		}
+		
 }
